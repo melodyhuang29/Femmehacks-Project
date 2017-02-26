@@ -1,0 +1,116 @@
+
+<!-- Maze Group Development -->
+<!DOCTYPE html>
+<html>
+	<head> 
+	<link href="apartment.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title> Maze Group Development </title>
+	<meta name="description" content="DESCRIBE YOUR WEBSITE">
+	<meta name="keywords" content="KEY, WORDS, HERE">
+	</head>
+	<body>
+	<style style="text/css">
+		.example1 {
+		 height: 50px;	
+		 overflow: hidden;
+		 position: relative;
+		}
+		.example1 h3 {
+		background-color:#C40000; 
+		 font-size: 2em;
+		 color: white;
+		 position: absolute;
+		 width: 100%;
+		 height: 100%;
+		 margin: 0;
+		 line-height: 50px;
+		 text-align: left;
+		 /* Starting position */
+		 -moz-transform:translateX(100%);
+		 -webkit-transform:translateX(100%);	
+		 transform:translateX(100%);
+		 /* Apply animation to this element */	
+		 -moz-animation: example1 15s linear infinite;
+		 -webkit-animation: example1 15s linear infinite;
+		 animation: example1 15s linear infinite;
+		}
+		/* Move it (define the animation) */
+		@-moz-keyframes example1 {
+		 0%   { -moz-transform: translateX(100%); }
+		 100% { -moz-transform: translateX(-100%); }
+		}
+		@-webkit-keyframes example1 {
+		 0%   { -webkit-transform: translateX(100%); }
+		 100% { -webkit-transform: translateX(-100%); }
+		}
+		@keyframes example1 {
+		 0%   { 
+		 -moz-transform: translateX(100%); /* Firefox bug fix */
+		 -webkit-transform: translateX(100%); /* Firefox bug fix */
+		 transform: translateX(100%); 		
+		 }
+		 100% { 
+		 -moz-transform: translateX(-100%); /* Firefox bug fix */
+		 -webkit-transform: translateX(-100%); /* Firefox bug fix */
+		 transform: translateX(-100%); 
+		 }
+		}
+</style>
+
+
+<div class="background_moving_text">
+	<div class="example1">
+		<h3>Philly Living &nbsp;&nbsp;&nbsp; Philly Living &nbsp;&nbsp;&nbsp;Philly Living &nbsp;&nbsp;&nbsp; Philly Living &nbsp;&nbsp;&nbsp; Philly Living &nbsp;&nbsp;&nbsp; Philly Living </h3>
+	</div>
+</div>
+	<div class="outer-div">
+
+		<div class="inner-div">
+		<p> Maze Group </p>
+
+		
+		<img class="mySlides" src="http://www.mazegroup.com/sites/default/files/photo_95_1_.JPG">
+		<img class="mySlides" src="http://mazegroup.com/sites/default/files/photo_95_2_.JPG">
+		<img class="mySlides" src="http://mazegroup.com/sites/default/files/photo_95_3_.JPG">
+		<img class="mySlides" src="http://mazegroup.com/sites/default/files/photo_95_4_.JPG">
+		
+		<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+   			var i;
+    		var x = document.getElementsByClassName("mySlides");
+    		for (i = 0; i < x.length; i++) {
+    			x[i].style.display = "none"; 
+    		}
+    		slideIndex++;
+    		if (slideIndex > x.length) {slideIndex = 1} 
+    		x[slideIndex-1].style.display = "block"; 
+    		setTimeout(carousel, 2000); 
+		}
+		</script>
+
+	
+		<h1> Address <mark class = "gray"> 2005 North 17th St </mark>  </h1> 
+	
+		<h1> Estimated time to campus <mark class = "gray"> 10 minutes </mark>  </h1>
+		
+		<h1> Price <mark class = "gray"> $625/bedroom </mark> </h1>
+		
+		<h1> Furnished <mark class = "gray"> No </mark>  </h1>
+		
+		<h1> Utilities <mark class = "gray"> Not Included </mark>  </h1> <!-- included or not -->
+		
+		<h1> Units <mark class = "gray"> total of 5 Bedrooms </mark>  </h1> 
+	
+		<h1> Pet Friendly <mark class = "gray"> Yes </mark> </h1>
+
+		<h1> Contact <mark class = "gray"> Phone (215-751-0203) </mark>  </h1>    
+		<!-- phone, email...-->
+		
+		<h1><a href="http://mazegroup.com/apartments-search">Link</a></h1>
+        </div>
+       </div>
+</html>

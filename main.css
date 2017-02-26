@@ -1,0 +1,35 @@
+body{
+	background-color: #fadbda; 
+}
+header{
+	color: black;
+	text-align: center;
+	font-size: 90px;
+}
+
+.changeColor{
+	color: #C40000;
+}
+
+.background_moving_text{
+	background-color: #C40000;
+}
+
+.options{
+	text-align: center;
+	background-color: #C40000;
+	color: white;
+	font-size: 23px;  
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+ a:hover {
+ 	color: black;
+ }
+
+ footer{
+ 	text-align: center;
+ 	background: #C40000;
+ }

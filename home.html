@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="main.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<title>Off Campus Housing</title>
+		<meta name="description" content="DESCRIBE YOUR WEBSITE">
+		<meta name="keywords" content="KEY, WORDS, HERE">
+	</head>
+	<body>
+
+<style style="text/css">
+		.example1 {
+		 height: 50px;	
+		 overflow: hidden;
+		 position: relative;
+		}
+		.example1 h3 {
+		background-color:#C40000; 
+		 font-size: 2em;
+		 color: white;
+		 position: absolute;
+		 width: 100%;
+		 height: 100%;
+		 margin: 0;
+		 line-height: 50px;
+		 text-align: left;
+		 /* Starting position */
+		 -moz-transform:translateX(100%);
+		 -webkit-transform:translateX(100%);	
+		 transform:translateX(100%);
+		 /* Apply animation to this element */	
+		 -moz-animation: example1 15s linear infinite;
+		 -webkit-animation: example1 15s linear infinite;
+		 animation: example1 15s linear infinite;
+		}
+		/* Move it (define the animation) */
+		@-moz-keyframes example1 {
+		 0%   { -moz-transform: translateX(100%); }
+		 100% { -moz-transform: translateX(-100%); }
+		}
+		@-webkit-keyframes example1 {
+		 0%   { -webkit-transform: translateX(100%); }
+		 100% { -webkit-transform: translateX(-100%); }
+		}
+		@keyframes example1 {
+		 0%   { 
+		 -moz-transform: translateX(100%); /* Firefox bug fix */
+		 -webkit-transform: translateX(100%); /* Firefox bug fix */
+		 transform: translateX(100%); 		
+		 }
+		 100% { 
+		 -moz-transform: translateX(-100%); /* Firefox bug fix */
+		 -webkit-transform: translateX(-100%); /* Firefox bug fix */
+		 transform: translateX(-100%); 
+		 }
+		}
+</style>
+
+
+<div class="background_moving_text">
+	<div class="example1">
+		<h3>Philly Living &nbsp;&nbsp;&nbsp; Philly Living &nbsp;&nbsp;&nbsp;Philly Living &nbsp;&nbsp;&nbsp; Philly Living &nbsp;&nbsp;&nbsp; Philly Living &nbsp;&nbsp;&nbsp; Philly Living </h3>
+	</div>
+</div>
+
+<header>
+	<span class='changeColor'>Temple</span> Off-Campus <span class='changeColor'>Housing</span>
+</header>	
+
+</br>
+
+ <div class="options">
+ 	<p><a href="The View.html">The View at Montgomery </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Kardon.html"> Kardon Atlantic Apartments </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Oxford.html"> Oxford Village</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Beech.html"> Beech International Village</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="TempleV.html"> Temple Villas</a> &nbsp;&nbsp;&nbsp;&nbsp; <a href="Maze.html"> Maze Group</a></p>
+ </div>
+
+<div class="test" align="center">
+	<div class="HomeSlide" style="max-width:900px" align="center">
+	  <img class="mySlides" src="http://medialibrarycdn.entrata.com/websites_media/oxfordvillageapts.com/cached_thumbs/2048x1362/53eb9608b14ea502.jpg" style="width:100%">
+	  <img class="mySlides" src="http://ttn.thetemplenews.netdna-cdn.com/files/2014/09/ViewatMontgomery_News_aaronwindhorst_9-792x528.jpg" style="width:100%">
+	  <img class="mySlides" src="https://c1.staticflickr.com/4/3946/15534818697_2e6f76be78_z.jpg" style="width:100%">
+	  <img class="mySlides" src="http://risere.com/wp-content/uploads/2016/01/IMG_3552_3_4-1024x681.jpg" style="width:100%">
+	</div>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</br>
+<footer>
+	#FemmeHacks17
+</footer>
+
+  	</body>
+</html>

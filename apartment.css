@@ -1,0 +1,88 @@
+.background_moving_text{
+	background-color: #C40000;
+}
+body{
+	background-color: #C40000; 
+}
+
+h1{
+	color: #283747;
+	font-size: 24px;
+	font-famiy: 'Times New Roman', serif;
+	/*margin-left: 10em;*/
+	font-weight: 700;
+	text-underline-position: none;
+
+}
+
+h2{
+	color: #616161;
+	font-size: 16px;
+	font-famiy: 'Times New Roman', serif;
+	/*margin-left: 20em;*/
+	
+}
+
+p{
+	color: black;
+	font-size: 40px;
+	font-famiy: 'Times New Roman', serif;
+	/*margin-left: 15em;*/
+	font-weight: 800;
+	margin-bottom: 0.2em;
+	margin-left: 40%;
+
+}
+
+img{
+	display: block;
+    margin: auto;
+   
+	width : 85%;
+	height: 25em;
+	/*margin-left: 15em;*/
+	
+}
+
+mark.gray{
+	color: #424949;
+	background: none;
+	font-size: 16px;
+	font-famiy: 'Times New Roman', serif;
+	/*margin-left: 0.2cm;*/
+
+}
+
+<p style="text-align: left; 
+line-height: 27px;
+" id="DrpDwnMn0-qez0label" class="s2repeaterButtonlabel" data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$SITE_HEADER.1.1.$DrpDwnMn0-qez.0.$dataItem-iv8ub408.0.0.0.0">Welcome!
+</p>
+
+.outer-div
+{
+     padding: 30px;
+     background-color: #C40000;
+}
+.inner-div
+{
+     margin: auto; 
+     width: 600px;
+     background-color: #FADBD8;
+     padding-left: 50px;
+     padding-right: 60px;
+     position:absolute;
+     top:0px;
+     margin-left: 330px;
+
+}
+/*! margin-bottom: 7px; 
+	font-size: 23px;
+    font-size: 1.4375rem;
+    line-height: 27px;
+    line-height: 1.6875rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    font-feature-settings: 'kern';
+    clear: left;
+    */

@@ -1,0 +1,66 @@
+
+<!-- The View at Montgomery -->
+<!DOCTYPE html>
+<html>
+	<head> 
+	<link href="apartment.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title> The View at Montgomery </title>
+	<meta name="description" content="DESCRIBE YOUR WEBSITE">
+	<meta name="keywords" content="KEY, WORDS, HERE">
+	</head>
+	<body>
+	<div class="outer-div">
+
+		<div class="inner-div">
+		<p> The View </p>
+
+		<!--
+		if only want a pic
+		 <img src="http://ttn.thetemplenews.netdna-cdn.com/files/2014/09/ViewatMontgomery_News_aaronwindhorst_9-792x528.jpg">
+		 -->
+		
+		<img class="mySlides" src="http://ttn.thetemplenews.netdna-cdn.com/files/2014/09/ViewatMontgomery_News_aaronwindhorst_9-792x528.jpg">
+		<img class="mySlides" src="http://theviewatmontgomery.com/sites/theviewatmontgomery.com/files/styles/larger/public/561_v2.jpg">
+		<img class="mySlides" src="http://theviewatmontgomery.com/sites/theviewatmontgomery.com/files/styles/header_image/public/default_images/539.jpg">
+
+		<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+   			var i;
+    		var x = document.getElementsByClassName("mySlides");
+    		for (i = 0; i < x.length; i++) {
+    			x[i].style.display = "none"; 
+    		}
+    		slideIndex++;
+    		if (slideIndex > x.length) {slideIndex = 1} 
+    		x[slideIndex-1].style.display = "block"; 
+    		setTimeout(carousel, 2000); 
+		}
+		</script>
+
+		<h1> Address <mark class = "gray"> 1100 West Montgomery Aveune </mark>  </h1> 
+	
+		<h1> Estimated time to campus <mark class = "gray"> 4 minutes </mark>  </h1>
+		
+		<h1> Price <mark class = "gray"> $800~$1,999 </mark> </h1>
+		
+		<h1> Furnished <mark class = "gray"> Yes </mark>  </h1>
+		
+		<h1> Utilities <mark class = "gray"> Included </mark>  </h1> <!-- included or not -->
+		
+		<h1> Units <mark class = "gray"> 1~4 Bedrooms </mark>  </h1> 
+	
+		<h1> Pet Friendly <mark class = "gray"> No </mark> </h1>
+
+		<h1> Contact <mark class = "gray"> Phone (215-423-1100) </mark>  </h1>    
+		<!-- phone, email...-->
+		
+		<h1><a href="http://theviewatmontgomery.com/">Link</a></h1>
+
+        </div>
+       </div>
+</html>
+            
